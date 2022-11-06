@@ -1,0 +1,56 @@
+.container{
+    height: 630px;
+    width: 420px;
+    background-color: black;
+    margin: auto;
+    border-radius: 20px;
+}
+p{
+    color: white;
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#screen{
+    height: 80px;
+    width: 380px;
+    margin: 15px;
+    border-radius: 15px;
+    font-size: 4rem;
+    background-color: rgb(142, 157, 157);
+    text-align: right;
+}
+
+.button{
+    height: 50px;
+    width: 60px;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 1.7rem;
+}
+
+.button:hover{
+    border: 5px solid greenyellow;
+}
+.number{
+    background-color: rgb(144, 147, 144);
+    color: white;
+   
+}
+
+.operator{
+    background-color: rgb(186, 183, 183);
+    color: white;
+}
+
+.clear{
+    background-color: red;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
