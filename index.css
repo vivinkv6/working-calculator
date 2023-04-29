@@ -1,56 +1,110 @@
-.container{
-    height: 630px;
-    width: 420px;
-    background-color: black;
-    margin: auto;
-    border-radius: 20px;
-}
-p{
-    color: white;
-    margin-left: 20px;
-    padding: 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800;900&display=swap');
 
+:root{
+    --primary-color:#031926;
+    --accent:#7067CF;
+    --accent2:#FF3366;
+    --font-color:#e1e1e1;
+    --body-color:#FBFFFE;
+    --font:'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:var(--font);
+    background-color: var(--body-color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    background-color: var(--primary-color);
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+.text-heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+.text-heading p{
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--font-color);
 }
 
 #screen{
-    height: 80px;
-    width: 380px;
-    margin: 15px;
-    border-radius: 15px;
-    font-size: 4rem;
-    background-color: rgb(142, 157, 157);
+    margin-top: 20px;
+    padding: 1.5rem 1rem;
+    width: 99%;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    font-size: 3.5rem;
+    color: var(--font-color);
+    background-color: #07212f;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
     text-align: right;
 }
 
 .button{
     height: 50px;
-    width: 60px;
-    margin-left: 35px;
+    width: 65px;
     margin-top: 10px;
     margin-bottom: 0px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
     font-size: 1.7rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .button:hover{
-    border: 5px solid greenyellow;
+    border: 5px  var(--accent);
+    background-color: var(--accent);
+    transition: 0.3s ease-in;
+    color:white
 }
 .number{
-    background-color: rgb(144, 147, 144);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--font-color);
    
 }
 
 .operator{
-    background-color: rgb(186, 183, 183);
-    color: white;
+    background-color: var(--primary-color);
+    background-color: #011520;
+    color: var(--font-color);
 }
 
 .clear{
-    background-color: red;
+    background-color: var(--accent2);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
+}
+.clear:hover{
+    background-color: var(--body-color);
+    color: var(--primary-color);
+    transition: .3s ease-in-out;
+}
+
+
+.input__field{
+    display: grid;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    padding-left: 5px;
+    justify-content: center;
+    column-gap: 10px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    margin-bottom: 5px;
 }
